@@ -11,16 +11,17 @@
             text-align: center;
             margin-top: 3;
         }
-         .cloud {
-      position: absolute;
-      background: white;
-      width: 100px; height: 40px;
-      border-radius: 20px;
-      opacity: 0.8;
-      z-index: 1;
-      animation: float linear infinite;
-      .cloud::after, .cloud::before {
-      content: ''; position: absolute; background: white; border-radius: 50%;
+        .cloud {
+            position: absolute;
+            background: white;
+            width: 100px; height: 40px;
+            border-radius: 20px;
+            opacity: 0.8;
+            z-index: 1;
+            animation: float linear infinite;
+        }
+        .cloud::after, .cloud::before {
+            content: ''; position: absolute; background: white; border-radius: 50%;
     }
     .cloud::after { width: 50px; height: 50px; top: -20px; left: 15px; }
     .cloud::before { width: 40px; height: 40px; top: -15px; left: 45px; }
@@ -28,7 +29,6 @@
     @keyframes float {
       from { left: -150px; }
       to { left: 100vw; }
-    }
     }
     </style>
 </head><body>
